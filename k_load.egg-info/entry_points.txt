@@ -1,0 +1,3 @@
+[console_scripts]
+k-load = k_load.__main__:console_entry
+
