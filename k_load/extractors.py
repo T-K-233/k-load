@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 from urllib import request
 import datetime
 import hashlib
@@ -111,7 +113,6 @@ class Bilibili(Downloadable):
                 self._log_progress()
         self._log_download_info()
         
-
 
 class KSong(Downloadable):
     site = '全民K歌'

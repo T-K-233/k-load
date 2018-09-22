@@ -1,11 +1,11 @@
 import setuptools
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
+with open('README.md', 'r', encoding='utf-8') as f:
+    long_description = f.read()
 
 setuptools.setup(
     name="k-load",
-    version="0.2.6",
+    version="0.2.8",
     author="-T.K.-",
     author_email="tk.fantasy.233@gmail.com",
     description="A downloader",

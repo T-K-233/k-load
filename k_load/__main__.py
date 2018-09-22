@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 import re
 from . import extractors
 
@@ -12,7 +14,7 @@ def run(url, save_dir='.'):
         obj = extractors.KSong(**params)
 
     else:
-        raise NotImplemented("I'm so sorry, but this website is not supported now......")
+        raise NotImplemented("We're sorry, but this website is not supported now......")
 
     obj.parse()
     obj.download()
@@ -20,6 +22,6 @@ def run(url, save_dir='.'):
 def console_entry():
     import argparse
     parser = argparse.ArgumentParser(description='Downloader')
-    parser.add_argument('url', type=str, help='the url of the source, should appear like http://example.com/')
+    parser.add_argument('url', type=str, help='the url of the content, should be like http://example.com/')
     args = parser.parse_args()
     run(args.url)
